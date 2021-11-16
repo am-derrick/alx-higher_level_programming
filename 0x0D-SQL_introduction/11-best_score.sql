@@ -2,4 +2,4 @@
 -- displays score and name, in this order
 -- scores are ordered, top first
 
-SELECT score, name FROM second_table WHERE score >= 10, ORDER BY score DESC;
+SELECT score, name FROM second_table WHERE score >= 10 ORDER BY score DESC;
