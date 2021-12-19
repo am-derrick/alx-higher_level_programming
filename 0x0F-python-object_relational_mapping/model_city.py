@@ -3,9 +3,10 @@
 contains the class definition of a City
 """
 
-from model_state import Base
+from model_state import Base, State
 import sqlalchemy
 from sqlalchemy import Column, Integer, String, ForeignKey
+
 
 class City(Base):
     "Represents the City class"
