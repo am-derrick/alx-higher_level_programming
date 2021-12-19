@@ -5,7 +5,7 @@ lists all State object from database hbtn_0e_0_usa
 
 import sqlalchemy
 from sqlalchemy import create_engine
-from sqlachemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker
 from sys import argv
 from model_state import Base, State
 
@@ -18,4 +18,4 @@ if __name__ == "__main__":
     session = Session()
     for state in session.query(State).order_by(State.id):
         print("{}: {}".format(state.id, state.name))
-    session.close
+    session.close()
