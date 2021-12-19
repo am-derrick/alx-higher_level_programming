@@ -5,7 +5,7 @@ Prints State object with the name passed as argument from the database
 
 import sqlalchemy
 from sqlalchemy import create_engine
-from sqlaclchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker
 from sys import argv
 from model_state import Base, State
 
