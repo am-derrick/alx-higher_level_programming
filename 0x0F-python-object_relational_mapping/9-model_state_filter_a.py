@@ -6,6 +6,7 @@ lists all State objects containing letter a from the database hbtn_0e_6_usa
 import sqlalchemy
 from sqlalchemy import crreate_engine
 from sqlalchemy.orm import sessionmaker
+from sys import argv
 from model_state import Base, State
 
 if __name__ == "__main__":
