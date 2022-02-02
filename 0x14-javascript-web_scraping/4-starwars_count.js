@@ -7,7 +7,7 @@ request(url, function (err, response, body) {
     } else if (response.statusCode === 200) {
 	let films = JSON.parse(body).results;
 	let count = 0;
-	fro (let filmIndex in films) {
+	for (let filmIndex in films) {
 	    let filmChars = films[filmIndex].characters;
 	    for (let charIndex in filmChars) {
 		if (filmChars[charIndex].includes('18')) {

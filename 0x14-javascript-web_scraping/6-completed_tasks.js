@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const request = require('request');
 const url = process.argv[2];
-request(url, function (err, reaponse, body) {
+request(url, function (err, response, body) {
     if (err) {
 	console.log(err);
     } else if (response.statusCode === 200) {
@@ -16,7 +16,8 @@ request(url, function (err, reaponse, body) {
 		    completed[task.userId]++;
 		}
 	    }
-	} console.log(completed);
+	}
+	console.log(completed);
     } else {
 	console.log('An error occured. Statsu code: ' + response.statusCode);
     }

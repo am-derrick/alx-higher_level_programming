@@ -2,8 +2,8 @@
 const request = require('request');
 const film = process.argv[2];
 let url = 'http://swapi.co/api/people/';
-function filmcharacters (fim, url) {
-    request{url, function (err, response, body) {
+function filmcharacters (film, url) {
+    request(url, function (err, response, body) {
 	if (err) {
 	    console.log(err);
 	} else if (response.statusCode == 200) {
